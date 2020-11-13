@@ -32,3 +32,4 @@ Widget _bodyWidget(CountState state, Dispatch dispatch) {
     ),
   );
 }
+
