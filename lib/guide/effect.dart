@@ -1,5 +1,6 @@
 import 'package:fish_redux/fish_redux.dart';
 import 'package:flutter/cupertino.dart' hide Action;
+import 'package:flutterreduxtest/broadcast/action.dart';
 import 'package:flutterreduxtest/main.dart';
 import 'package:flutterreduxtest/store/action.dart';
 import 'package:flutterreduxtest/store/store.dart';
@@ -16,7 +17,7 @@ Effect<GuideState> buildEffect() {
 //    GuideAction.toComponent: _toComponent,
     GuideAction.switchTheme: _switchTheme,
     //接受发送的广播消息
-//    BroadcastAction.toNotify: _receiveNotify,
+    BroadcastAction.toNotify: _receiveNotify,
   });
 }
 
